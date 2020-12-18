@@ -1,0 +1,104 @@
+{
+	"pages": [
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom" // 	去除默认头部
+				}
+		},
+		{
+			"path": "pages/study/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/study/learnDetail",
+			"style": {
+				"navigationBarTitleText": "学习详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/exam/index",
+			"style": {
+				"navigationBarTitleText": "考试",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/lookMedal/index",
+			"style": {
+				"navigationBarTitleText": "考试详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/myMedal/index",
+			"style": {
+				"navigationBarTitleText": "我的证书",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/studyRecord/index",
+			"style": {
+				"navigationBarTitleText": "选调培训记录",
+				"navigationStyle": "custom"
+			}
+		}    ,{
+            "path" : "pages/study/learnDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "甘肃安监",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar":{
+		"color":"#B9C0CA",
+		"selectedColor":"#008CD6",
+		"backgroundColor":"#FFFFFF",
+		"borderStyle":"white",
+		"list":[
+			{
+				"pagePath":"pages/study/index",
+				"text":"首页",
+				"iconPath":"static/images/common/study.png",
+				"selectedIconPath":"./static/images/common/study-active.png"
+			},
+			{
+				"pagePath":"pages/my/index",
+				"text":"我的",
+				"iconPath":"static/images/common/my.png",
+				"selectedIconPath":"./static/images/common/my-active.png"
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "pages/login/index", //模式名称
+				"path": "pages/login/index", //启动页面，必选
+				"query": "planId=9332b3ea46a1c254bc3585462504b97f&planPeoPleId=0dc722af3465364a7d46ea01e5637797" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
